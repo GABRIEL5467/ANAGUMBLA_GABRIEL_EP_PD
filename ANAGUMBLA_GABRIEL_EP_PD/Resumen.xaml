@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANAGUMBLA_GABRIEL_EP_PD.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Usuario:"  ></Label>
+
+            <Label x:Name="lblUser" ></Label>
+            <Grid>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+
+                <BoxView Grid.Row="1" Grid.Column="0" ></BoxView>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Estudiante:" />
+
+                <Label Grid.Row="0" Grid.Column="1" Text="Estudiante:" x:Name="lblNombre" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Valor Total:" />
+
+                <Label Grid.Row="1" Grid.Column="1" x:Name="lblVtotal" Text="$" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
